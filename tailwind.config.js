@@ -16,7 +16,7 @@ export default {
                 primary: {
                     light: '#CDDFF1',
                     DEFAULT: '#3B82F6', // Warna default
-                    dark: '#1E40AF',
+                    dark: '#2495C5',
                 },
             },
         },

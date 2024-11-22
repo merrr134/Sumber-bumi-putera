@@ -29,3 +29,4 @@ Route::get('/about-us/aset-perusahaan', function () {
 
 Route::view('/news', 'news')->name('news');
 Route::view('/contact', 'contact')->name('contact');
+Route::view('/berita', 'berita')->name('berita');

@@ -16,9 +16,9 @@
         <!-- Navbar Dropdown -->
         <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
             <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-transparent md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent md:dark:bg-transparent">
-                <li><a href="/" class="block py-2 px-3 text-gray-500 rounded hover:text-green-500">Home</a></li>
+                <li><a href="/" class="block py-2 px-3 text-white rounded hover:text-green-500">Home</a></li>
                 <li class="relative group">
-                    <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 px-3 text-gray-500 md:hover:text-green-500">
+                    <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 px-3 text-white md:hover:text-green-500">
                         Tentang Kami 
                         <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
@@ -49,7 +49,7 @@
                             </li>
                             <li>
                                 <a href="{{ url('/about-us/struktur') }}" class="block px-4 py-2 text-sm text-black hover:bg-gray-100 dark:hover:bg-gray-200 dark:text-black dark:hover:text-green-500 font-semibold">
-                                    Struktur
+                                    Struktur Organinasi
                                 </a>
                             </li>
                             <li>
@@ -68,7 +68,7 @@
                 </li>
                 {{-- <li><a href="" class="block py-2 px-3 text-white hover:text-green-500">Gallery</a></li> --}}
                 {{-- <li><a href="{{ url('/news') }}" class="block py-2 px-3 text-white hover:text-green-500">News</a></li> --}}
-                <li><a href="{{ url('/contact') }}" class="block py-2 px-3 text-gray-500 hover:text-green-500">Contact</a></li>
+                <li><a href="{{ url('/contact') }}" class="block py-2 px-3 text-white hover:text-green-500">Contact</a></li>
             </ul>
         </div>
     </div>
@@ -76,62 +76,63 @@
 
 <script>
     // Hamburger icon toggle
-    const hamburgerBtn = document.getElementById('hamburger-btn');
-    const hamburgerIcon = document.getElementById('hamburger-icon');
-    const closeIcon = document.getElementById('close-icon');
-    const navbarDropdown = document.getElementById('navbar-dropdown');
+const hamburgerBtn = document.getElementById('hamburger-btn');
+const hamburgerIcon = document.getElementById('hamburger-icon');
+const closeIcon = document.getElementById('close-icon');
+const navbarDropdown = document.getElementById('navbar-dropdown');
 
-    hamburgerBtn.addEventListener('click', () => {
-        // Toggle visibility of dropdown menu
-        navbarDropdown.classList.toggle('hidden');
-        // Toggle icons
-        hamburgerIcon.classList.toggle('hidden');
-        closeIcon.classList.toggle('hidden');
-    });
+// Toggle dropdown menu
+hamburgerBtn.addEventListener('click', () => {
+    navbarDropdown.classList.toggle('hidden');
+    hamburgerIcon.classList.toggle('hidden');
+    closeIcon.classList.toggle('hidden');
+});
 
-    // Navbar dan warna teks
-    const navbar = document.getElementById('navbar');
-    const navbarLinks = document.querySelectorAll('#navbar-dropdown a'); // Link utama
-    const dropdownButton = document.getElementById('dropdownNavbarLink'); // Button dropdown
-    const dropdownLinks = document.querySelectorAll('#dropdownNavbar a'); // Link dalam dropdown
+// Navbar colors and scroll functionality
+const navbar = document.getElementById('navbar');
+const navbarLinks = document.querySelectorAll('#navbar-dropdown a'); // Navbar links
+const dropdownButton = document.getElementById('dropdownNavbarLink'); // Dropdown button
+const dropdownLinks = document.querySelectorAll('#dropdownNavbar a'); // Dropdown links
 
-    // Fungsi untuk mengatur warna teks dan background navbar
-    function updateNavbarColors(scrollY) {
-        if (scrollY > 50) {
-            navbar.classList.add('bg-white', 'shadow-xl');
-            navbar.classList.remove('bg-transparent');
-            navbarLinks.forEach(link => {
-                link.classList.remove('text-black');
-                link.classList.add('text-black');
-                link.classList.add('border-b-2');
-                link.classList.add('border-transparent');
-                link.classList.add('hover:border-white');
-            });
-            dropdownButton.classList.remove('text-black');
-            dropdownButton.classList.add('text-black');
-            dropdownLinks.forEach(link => {
-                link.classList.remove('text-black');
-                link.classList.add('text-black');
-            });
-        } else {
-            navbar.classList.remove('bg-white', 'shadow-xl');
-            navbar.classList.add('bg-transparent');
-            navbarLinks.forEach(link => {
-                link.classList.remove('text-black');
-                link.classList.add('text-black');
-                link.classList.remove('border-b-2');
-            });
-            dropdownButton.classList.remove('text-black');
-            dropdownButton.classList.add('text-black');
-            dropdownLinks.forEach(link => {
-                link.classList.remove('text-black');
-                link.classList.add('text-black');
-            });
-        }
+// Function to update navbar colors based on scroll position
+function updateNavbarColors(scrollY) {
+    if (scrollY > 50) {
+        // Apply styles when scrolled down
+        navbar.classList.add('bg-white', 'shadow-xl');
+        navbar.classList.remove('bg-transparent');
+        navbarLinks.forEach(link => {
+            link.classList.remove('text-white');
+            link.classList.add('text-black');
+        });
+        dropdownButton.classList.remove('text-white');
+        dropdownButton.classList.add('text-black');
+        dropdownLinks.forEach(link => {
+            link.classList.remove('text-white');
+            link.classList.add('text-black');
+        });
+    } else {
+        // Reset styles when at the top of the page
+        navbar.classList.remove('bg-white', 'shadow-xl');
+        navbar.classList.add('bg-transparent');
+        navbarLinks.forEach(link => {
+            link.classList.remove('text-black');
+            link.classList.add('text-white');
+        });
+        dropdownButton.classList.remove('text-black');
+        dropdownButton.classList.add('text-white');
+        dropdownLinks.forEach(link => {
+            link.classList.remove('text-black');
+            link.classList.add('text-white');
+        });
     }
+}
 
-    // Event listener pada scroll
-    window.onscroll = function() {
-        updateNavbarColors(window.scrollY);
-    };
+// Event listener pada scroll
+window.addEventListener('scroll', () => {
+    updateNavbarColors(window.scrollY);
+});
+
+// Initialize navbar colors when the page loads
+updateNavbarColors(window.scrollY);
+
 </script>

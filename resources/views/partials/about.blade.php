@@ -9,7 +9,7 @@
             Lokasi penambangan Sumber Bumi Putera terletak di <br/> Blok Mandiodo, Desa Puusuli, Kelurahan Tapunggaya,<br/> Kecamatan Molawe,<br/> 
             Provinsi Sulawesi Tenggara.
         </p>
-        <a href="#" class="px-6 py-2 text-white bg-blue-700 rounded-lg hover:bg-blue-800 transition duration-200">
+        <a href="{{ url('/about-us/tentang-kami') }}" class="px-6 py-2 text-white bg-blue-700 rounded-lg hover:bg-blue-800 transition duration-200">
             View More
         </a>
     </div>
