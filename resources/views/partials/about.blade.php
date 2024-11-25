@@ -15,7 +15,7 @@
     </div>
     <div class="w-full md:w-1/2">
         <img
-            src="{{ asset('images/gambar1.png') }}"
+            src="{{ asset('images/image6.jpg') }}"
             alt="About Us"
             class="w-full h-auto object-cover rounded-lg shadow-lg"
         />

@@ -67,8 +67,8 @@
                     
                 </li>
                 {{-- <li><a href="" class="block py-2 px-3 text-white hover:text-green-500">Gallery</a></li> --}}
-                {{-- <li><a href="{{ url('/news') }}" class="block py-2 px-3 text-white hover:text-green-500">News</a></li> --}}
-                <li><a href="{{ url('/contact') }}" class="block py-2 px-3 text-white hover:text-green-500">Contact</a></li>
+                <li><a href="{{ url('/news') }}" class="block py-2 px-3 text-white hover:text-green-500">Berita</a></li>
+                <li><a href="{{ url('/contact') }}" class="block py-2 px-3 text-white hover:text-green-500">Kontak</a></li>
             </ul>
         </div>
     </div>

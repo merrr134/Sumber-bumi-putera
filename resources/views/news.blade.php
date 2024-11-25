@@ -1,15 +1,40 @@
 @extends('layouts.app')
 
 @section('content')
-<section class="relative bg-cover bg-center h-[300px] md:h-[400px] text-white flex items-center justify-center bg-blue-400" style="background-image: url('{{ asset('images/struktur-bg.jpg') }}');">
+<section class="relative bg-cover bg-center h-[300px] md:h-[400px] text-white flex items-center justify-center bg-primary-dark" style="background-image: url('{{ asset('images/struktur-bg.jpg') }}');">
     <!-- Overlay -->
-    <div class="absolute inset-0 bg-black opacity-50"></div>
+    <div class="absolute inset-0 "></div>
 
     <!-- Content -->
     <div class="relative z-10 w-full">
         <div class="container mx-auto text-staart px-8 md:px-16 lg:px-36">
             <h1 class="text-3xl md:text-5xl font-bold mb-4 italic">Berita Terkini</h1>
         </div>
+        <nav class="flex lg:px-36 px-8" aria-label="Breadcrumb">
+            <ol class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
+              <li class="inline-flex items-center">
+                <a href="#" class="inline-flex items-center text-sm font-medium text-white hover:text-blue-600 dark:text-white ">
+                  <svg class="w-3 h-3 me-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z"/>
+                  </svg>
+                  Home
+                </a>
+              </li>
+              <li>
+                <div class="flex items-center">
+                  <svg class="rtl:rotate-180 w-3 h-3 text-gray-400 mx-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                  </svg>
+                  <a href="#" class="ms-1 text-sm font-medium text-white md:ms-2 dark:text-white ">Berita Terkini</a>
+                </div>
+              </li>
+              <li aria-current="page">
+                <div class="flex items-center">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                </div>
+              </li>
+            </ol>
+          </nav>
     </div>
 </section>
 
@@ -24,7 +49,7 @@
             <div class="relative bg-gray-100 rounded-xl shadow-lg overflow-hidden">
                 <a href="#" class="block group relative">
                     <!-- Gambar -->
-                    <img src="{{ asset('images/gambar1.png') }}" 
+                    <img src="{{ asset('images/image7.jpg') }}" 
                          alt="Judul Berita 1" 
                          class="w-full h-56 object-cover transform group-hover:scale-110 transition duration-300 z-0">
                 </a>
@@ -174,7 +199,7 @@
             <div class="relative bg-gray-100 rounded-xl shadow-lg overflow-hidden">
                 <a href="#" class="block group relative">
                     <!-- Gambar -->
-                    <img src="{{ asset('images/gambar6.png') }}" 
+                    <img src="{{ asset('images/image6.jpg') }}" 
                          alt="Judul Berita 6" 
                          class="w-full h-56 object-cover transform group-hover:scale-110 transition duration-300 z-0">
                 </a>
@@ -209,7 +234,7 @@
     <nav aria-label="Page navigation example ">
         <ul class="flex items-center -space-x-px h-10 text-base">
           <li>
-            <a href="#" class="flex items-center justify-center px-4 h-10 ms-0 leading-tight text-black bg-white border border-e-0 border-white rounded-s-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-white dark:border-white dark:text-black dark:hover:text-blue-500">
+            <a href="#" class="flex items-center justify-center px-4 h-10 ms-0 leading-tight text-white bg-white border border-e-0 border-white rounded-s-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-white dark:border-white dark:text-black dark:hover:text-blue-500">
               <span class="sr-only">Previous</span>
               <svg class="w-3 h-3 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>

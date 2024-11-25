@@ -16,35 +16,35 @@
         <div id="gallerySlider" class="flex transition-transform duration-500 ease-in-out">
           <!-- Duplikat Gambar Terakhir -->
           <div class="w-full sm:w-full md:w-1/3 px-2 shrink-0">
-            <img src="{{ asset('images/gambar6.png') }}" alt="Gallery Image 6" class="w-full h-auto md:h-48 rounded-lg object-cover">
+            <img src="{{ asset('images/gambar5.png') }}" alt="Gallery Image 6" class="w-full h-auto md:h-48 rounded-lg object-cover">
           </div>
           <!-- Gambar 1 -->
           <div class="w-full sm:w-full md:w-1/3 px-2 shrink-0">
-            <img src="{{ asset('images/gambar1.png') }}" alt="Gallery Image 1" class="w-full h-auto md:h-48 rounded-lg object-cover">
+            <img src="{{ asset('images/image6.jpg') }}" alt="Gallery Image 1" class="w-full h-auto md:h-48 rounded-lg object-cover">
           </div>
           <!-- Gambar 2 -->
           <div class="w-full sm:w-full md:w-1/3 px-2 shrink-0">
-            <img src="{{ asset('images/gambar2.png') }}" alt="Gallery Image 2" class="w-full h-auto md:h-48 rounded-lg object-cover">
+            <img src="{{ asset('images/image7.jpg') }}" alt="Gallery Image 2" class="w-full h-auto md:h-48 rounded-lg object-cover">
           </div>
           <!-- Gambar 3 -->
           <div class="w-full sm:w-full md:w-1/3 px-2 shrink-0">
-            <img src="{{ asset('images/gambar3.png') }}" alt="Gallery Image 3" class="w-full h-auto md:h-48 rounded-lg object-cover">
+            <img src="{{ asset('images/image8.jpg') }}" alt="Gallery Image 3" class="w-full h-auto md:h-48 rounded-lg object-cover">
           </div>
           <!-- Gambar 4 -->
           <div class="w-full sm:w-full md:w-1/3 px-2 shrink-0">
-            <img src="{{ asset('images/gambar4.png') }}" alt="Gallery Image 4" class="w-full h-auto md:h-48 rounded-lg object-cover">
+            <img src="{{ asset('images/gambar2.png') }}" alt="Gallery Image 4" class="w-full h-auto md:h-48 rounded-lg object-cover">
           </div>
           <!-- Gambar 5 -->
           <div class="w-full sm:w-full md:w-1/3 px-2 shrink-0">
-            <img src="{{ asset('images/gambar5.png') }}" alt="Gallery Image 5" class="w-full h-auto md:h-48 rounded-lg object-cover">
+            <img src="{{ asset('images/gambar3.png') }}" alt="Gallery Image 5" class="w-full h-auto md:h-48 rounded-lg object-cover">
           </div>
           <!-- Gambar 6 -->
           <div class="w-full sm:w-full md:w-1/3 px-2 shrink-0">
-            <img src="{{ asset('images/gambar6.png') }}" alt="Gallery Image 6" class="w-full h-auto md:h-48 rounded-lg object-cover">
+            <img src="{{ asset('images/gambar4.png') }}" alt="Gallery Image 6" class="w-full h-auto md:h-48 rounded-lg object-cover">
           </div>
           <!-- Duplikat Gambar Pertama -->
           <div class="w-full sm:w-full md:w-1/3 px-2 shrink-0">
-            <img src="{{ asset('images/gambar1.png') }}" alt="Gallery Image 1" class="w-full h-auto md:h-48 rounded-lg object-cover">
+            <img src="{{ asset('images/image6.jpg') }}" alt="Gallery Image 1" class="w-full h-auto md:h-48 rounded-lg object-cover">
           </div>
         </div>
       </div>

@@ -7,22 +7,22 @@
             
             <!-- Berita 1 -->
             <div class="relative bg-gray-100 rounded-xl shadow-lg overflow-hidden">
-                <a href="#" class="block group relative">
+                <a href="{{ url('/berita') }}" class="block group relative">
                     <!-- Gambar -->
-                    <img src="{{ asset('images/gambar1.png') }}" 
+                    <img src="{{ asset('images/image6.jpg') }}" 
                          alt="Judul Berita 1" 
                          class="w-full h-56 object-cover transform group-hover:scale-110 transition duration-500 z-0"> <!-- Durasi diperpanjang -->
                 </a>
                 <div class="p-6">
                     <p class="text-sm text-gray-500 mb-3">12 November 2024</p>
-                    <a href="#" class="text-xl font-bold text-gray-800 hover:text-blue-600">
+                    <a href="{{ url('/berita') }}" class="text-xl font-bold text-gray-800 hover:text-blue-600">
                         Job Fair Expo 2024: SMK Telkom Makassar Hadirkan Peluang Karier untuk Generasi Muda
                     </a>
                     <p class="text-sm text-gray-600 mt-3">
                         Deskripsi singkat dari berita untuk memberikan gambaran kepada pembaca tentang kontennya.
                     </p>
                     <!-- Tombol dengan animasi teks -->
-                    <a href="{{ url('/contact') }}" 
+                    <a href="{{ url('/berita') }}" 
                        class="mt-4 flex items-center text-blue-500 font-semibold transition-all duration-500 relative group"> <!-- Durasi diperpanjang -->
                         <!-- Teks animasi masuk dari kiri (dimulai tersembunyi di kiri) -->
                         <span 
@@ -43,7 +43,7 @@
             <div class="relative bg-gray-100 rounded-xl shadow-lg overflow-hidden">
                 <a href="#" class="block group relative">
                     <!-- Gambar -->
-                    <img src="{{ asset('images/gambar1.png') }}" 
+                    <img src="{{ asset('images/image6.jpg') }}" 
                          alt="Judul Berita 1" 
                          class="w-full h-56 object-cover transform group-hover:scale-110 transition duration-500 z-0"> <!-- Durasi diperpanjang -->
                 </a>
@@ -76,7 +76,7 @@
             <div class="relative bg-gray-100 rounded-xl shadow-lg overflow-hidden">
                 <a href="#" class="block group relative">
                     <!-- Gambar -->
-                    <img src="{{ asset('images/gambar1.png') }}" 
+                    <img src="{{ asset('images/image6.jpg') }}" 
                          alt="Judul Berita 1" 
                          class="w-full h-56 object-cover transform group-hover:scale-110 transition duration-500 z-0"> <!-- Durasi diperpanjang -->
                 </a>
