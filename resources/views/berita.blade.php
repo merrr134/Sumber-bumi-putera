@@ -1,29 +1,30 @@
 @extends('layouts.app')
 
 @section('content')
-<section class="relative bg-cover bg-center text-white flex items-center justify-center bg-primary-dark min-h-[80vh]" style="background-image: url('{{ asset('images/struktur-bg.jpg') }}');">
+<section class="relative bg-cover bg-center text-white flex items-center justify-center bg-primary-dark min-h-[80vh]" style="background-image: url('{{ asset('images/struktur-bg.jpg') }}');" data-aos="fade-up" data-aos-duration="1500">
   <!-- Overlay -->
   <div class="absolute inset-0 "></div>
 
   <div class="container px-4 text-center relative z-20 mx-auto max-w-[1000px] overflow-hidden">
     <!-- Judul -->
-    <h1 class="text-4xl font-bold mb-4">Job Fair Expo 2024: SMK Telkom Makassar Hadirkan Peluang Karier untuk Generasi Muda</h1>
-</div>
+    <h1 class="text-4xl font-bold mb-4" data-aos="zoom-in" data-aos-duration="1000">Job Fair Expo 2024: SMK Telkom Makassar Hadirkan Peluang Karier untuk Generasi Muda</h1>
+  </div>
 </section>
 
 <!-- Konten Utama -->
-<div class="relative z-20 mx-auto bg-white lg:mb-28 md:mb-12 -mt-36 rounded-lg shadow-md max-w-[1000px] overflow-hidden">
+<div class="relative z-20 mx-auto bg-white lg:mb-28 md:mb-12 -mt-36 rounded-lg shadow-md max-w-[1000px] overflow-hidden" data-aos="fade-up" data-aos-duration="1500">
   <!-- Bagian Gambar -->
   <div>
       <img 
           src="{{ asset('images/image6.jpg') }}" 
           alt="Gambar Placeholder" 
           class="w-full h-auto object-cover"
+          data-aos="zoom-in" data-aos-duration="1000"
       />
   </div>
   <!-- Bagian Informasi -->
   <div class="p-6">
-      <p class="text-gray-600">
+      <p class="text-gray-600" data-aos="fade-up" data-aos-duration="1500">
           Makassar, 16 November 2024 SMK Telkom Makassar sukses menggelar Job Fair Expo 2024, sebuah pameran karier bergengsi yang berlangsung selama dua hari, mulai tanggal 16 hingga 17 November 2024. Bertempat di Lontara SMK Telkom Makassar, acara ini membuka pintu karier bagi generasi muda, khususnya siswa dan alumni SMK, dengan menghadirkan lebih dari 14 perusahaan nasional dan multinasional.
           <br><br>
           Acara ini turut dihadiri oleh Kepala Sekolah SMK Telkom Makassar, Kepala Bidang SMK Dinas Pendidikan Provinsi Sulawesi selatan Bapak Drs. Abdul Malik Azkari, M.Pd., dan Pengawas SMK Dinas Pendidikan SulSel, Bapak Kamaruddin S.Pd., serta Bapak Sjaiful Bahri, S.E., S.St.Par selaku Ketua DPD AHLI Sulsel. Dalam sambutannya, mereka menyampaikan apresiasi atas kolaborasi berbagai pihak dalam mendukung pengembangan karier siswa.

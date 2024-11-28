@@ -35,4 +35,90 @@
       animation: carouselAnimation 12s linear infinite;
   }
   
+img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+#element-animasi {
+    display: block;
+    opacity: 0; /* Awal elemen transparan */
+}
+
+#element-animasi.animate__fadeIn {
+    opacity: 1; 
+    transition: opacity 1s ease-in-out;
+}
+.fancybox-image {
+    transform-origin: center center;
+}
+.fancybox-content img {
+    transition: none !important;
+    transform: none !important; 
+}
+/* Fade-in animation */
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fade-in {
+    animation: fadeIn 1s ease-out forwards;
+  }
+  
+  /* Scale-up animation */
+  @keyframes scaleUp {
+    0% {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  .scale-up {
+    animation: scaleUp 1s ease-out forwards;
+  }
+  
+  /* Carousel animation */
+  @keyframes carouselAnimation {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-100%); }
+    40% { transform: translateX(-200%); }
+    60% { transform: translateX(-300%); }
+    80% { transform: translateX(-400%); }
+    100% { transform: translateX(-500%); }
+  }
+  
+  .carousel-wrapper {
+    animation: carouselAnimation 12s linear infinite;
+  }
+  
+  /* Hover effect for images */
+  img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Fancybox image animation */
+  .fancybox-image {
+    transform-origin: center center;
+  }
+  
+  .fancybox-content img {
+    transition: none !important;
+    transform: none !important; 
+  }
+  
+  /* Additional effects for fade-in sections */
+  .fade-in-section {
+    animation: fadeIn 1s ease-out forwards;
+  }
   
